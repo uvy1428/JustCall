@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JustCall</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JustCall</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+    
+            </li>
+            <li class="bd-placeholder-img rounded-circle">
+              <h3 class="bd-placeholder-img rounded-circle" style="color: Yellow;">Call Our Expert- 7417536306</h3>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <br />
+
+   
+    <div.container>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              style="width: 200; height: 400px"
+              src="https://media.istockphoto.com/photos/closeup-of-the-hands-of-a-mechanic-using-a-voltmeter-to-repair-an-picture-id1363819718?s=612x612"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Electic work</h5>
+              <p>
+                Experts follow the mask protection and give the best service on
+                your door...
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style="width: 200; height: 400px"
+              src="https://media.istockphoto.com/photos/maintenance-work-on-large-format-fabric-printer-picture-id1311198589?s=612x612"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Complex Circuit</h5>
+              <p>
+                They have the protective device to check to prevent the shocked
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style="width: 200; height: 400px"
+              src="https://media.istockphoto.com/photos/bring-all-your-bike-repairs-and-maintenance-jobs-to-me-picture-id1131995298?s=612x612"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Car and Bike Mechanic work</h5>
+              <p>
+                Our experts are professional they work as you are getting
+                service by the parent company of ther product
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div.container>
+    <br>
+
+
+
+
+    <div class="container">  <div style="display: inline-block; margin-top: 30px" class="center" >
+        <div class="mb-3">
+            <form action="/just/" method="post">
+                {% csrf_token %}
+                {{ get }}
+                <label for="user_name" class="form-label"
+                >User name *</label>
+                <input id
+                type="Contact"
+                class="form-control"
+                id="Phone_number"
+                placeholder="Customer Name.."
+                style="margin: bottom 10px;"
+                name="Phone_number"
+                maxlength="100" required
+              />
+
+                <label for="Phone_number" class="form-label"
+            >Phone number *</label
+          >
+          <input id
+            type="Contact"
+            class="form-control"
+            id="Phone_number"
+            placeholder="Type Contact number.."
+            style="margin: bottom 10px;"
+            name="Phone_number"
+            maxlength="100" required
+          />
+          <label for="user_name" class="form-label" style="margin: bottom 10px;">Job Title *</label>
+          <input id
+            type="Contact"
+            class="form-control"
+            id="Phone_number"
+            placeholder="Job titile Ex: AC Electric Work Etc"
+            style="margin: bottom 10px;"
+            name="Phone_number"
+            maxlength="100" required
+          />
+      
+                <label for="exampleFormControlTextarea1" class="form-label" style="margin: top 10px;"
+                >Required the Job Description *</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Mention in details.."
+              ></textarea> 
+              
+              <label for="exampleFormControlTextarea1" class="form-label" style="margin: top 10px;"
+              >Complete Address *</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Address Of the working place.."
+            ></textarea> <br>
+            
+
+
+              <button input type="submit" value="OK" class="btn btn-outline-success" style="margin-top: 5px;">Submit</button>
+            </form>
+           
+        </div>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+          </footer>
+</div>
+  
+    
+
+          <style>
+           .container {
+                        font-family: arial;
+                        font-size: 14px;
+                        margin: 10px;
+                        width: 350px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        
+                    }
+          </style>
+       
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+      
+  </body>
+  
+   
+</html>
